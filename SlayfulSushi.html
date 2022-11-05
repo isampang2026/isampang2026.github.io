@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&family=Noto+Sans+JP:wght@900&family=Nunito:wght@800&family=Poppins&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+        <title>Slayful Sushi</title>
+        <style>
+            body {
+                width: fit-content;
+                height: fit-content;
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+                overflow-x: hidden; 
+            }
+            h1, h2 {
+                font-family: 'Poppins', sans-serif;
+                color: #F2E6D8;
+                font-weight: lighter;
+            }
+            p {
+                font-family: 'Merriweather', serif;
+            }
+            #header {
+                background-color: #73020C;
+                height: 100px;
+                padding-top: 1px;
+                padding-left: 5px;
+            }
+            .pagetitle {
+                font-family: 'Quicksand', sans-serif;
+                font-size: 90pt;
+                color: #F2E6D8;
+                text-align: center;
+                float: right;
+                font-weight: bolder;
+            }
+            .nav a {
+                font-family: 'Poppins', sans-serif;
+                color:  #fff1df;
+                text-decoration: none;
+                padding: 25px 22px;
+                font-size: 16pt;
+                display: inline-block;
+            }
+            #main {
+                background-size: cover;
+                background-color: #21211D;
+                height: 100px;
+            }
+            #welcome {
+                text-align: left;
+            }
+            #footer {
+                background-color: #73020C;
+                height:160px;
+                padding-top: 1px;
+                padding-left: 5px;
+            }
+            #copyright {
+                background-color: #590202;
+                height: 50px;
+                font-family: 'Poppins', sans-serif;
+                color:  #fff1df;
+                text-align: center;
+            }
+            #side {
+                width: 40%;
+                float: left;
+                padding-top: 130px;
+            }
+            #content {
+                width: 60%;
+                float: right;
+                text-align: right;
+            }
+            .text {
+                font-family: 'Lato', sans-serif;
+                color:  #fff1df;
+                padding-right: 50px;
+                padding-left: 50px;
+                text-align: center;
+            }
+            .titles {
+                color:  #fff1df;
+                font-family: 'Poppins', serif;
+                font-size: 27pt;
+                text-decoration: none;
+                padding: 3px;
+                text-align: center;
+            }
+            .sushititles {
+                -webkit-text-fill-color:#F2E6D8;
+                -webkit-text-size-adjust: auto;
+                -webkit-text-stroke-width:0.01px;
+                -webkit-text-stroke-color: #21211D;
+                font-family: 'Poppins', serif;
+                font-style: italic;
+                font-size: 50pt;
+                text-decoration: none;
+                padding: 110px;
+                text-align: center;
+                font-weight: bold;
+            }
+            #types1 {
+                background-color: #21211D;
+                height: 350px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            #types2 {
+                background-color: #21211D;
+                height: 350px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            #types3 {
+                background-color: #21211D;
+                height: 350px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            #nigiri {
+                font-family: 'Noto Sans JP', sans-serif;
+                color:  #fff1df;
+                float: left;
+                width: 49%;
+                background-image: url(https://images.pexels.com/photos/3338500/pexels-photo-3338500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+                background-position:center center;
+                font-size: 27pt;
+                text-decoration: none;
+                padding: 1px;
+                text-align: center;
+                height: 300px;
+                background-repeat: no-repeat;
+            }
+            #sashimi {
+                font-family: 'Noto Sans JP', sans-serif;
+                color:  #fff1df;
+                float:right;
+                width: 49%;
+                background-image: url(https://i.pinimg.com/originals/f5/4f/07/f54f07d77d7673db8cef6d46008d447d.png);
+                background-position: center;
+                background-size: cover;
+                font-size: 27pt;
+                text-decoration: none;
+                padding: 1px;
+                text-align: center;
+                height: 300px;
+                background-repeat: no-repeat;
+            }
+            #chirashi {
+                font-family: 'Noto Sans JP', sans-serif;
+                color:  #fff1df;
+                float: left;
+                width: 49%;
+                background-image: url(https://tryhiddengems.com/wp-content/uploads/2020/05/Chirashi-924x1024.jpg);
+                background-position:center center;
+                font-size: 27pt;
+                text-decoration: none;
+                padding: 1px;
+                text-align: center;
+                height: 300px;
+                background-repeat: no-repeat;
+            }
+            #maki {
+                font-family: 'Noto Sans JP', sans-serif;
+                color:  #fff1df;
+                float:right;
+                width: 49%;
+                background-image: url(https://pickledplum.com/wp-content/uploads/2020/05/maki-sushi-1.jpg);
+                background-position: center;
+                background-size: cover;
+                font-size: 27pt;
+                text-decoration: none;
+                text-align: center;
+                height: 300px;
+                background-repeat: no-repeat;
+            }
+            #uramaki {
+                font-family: 'Noto Sans JP', sans-serif;
+                color:  #fff1df;
+                float: left;
+                width: 49%;
+                background-image: url(https://img.freepik.com/premium-photo/uramaki-philadelphia-sushi-with-salmon-cucumbers-sesame_17766-23.jpg?w=2000);
+                background-position:center center;
+                font-size: 27pt;
+                text-decoration: none;
+                padding: 1px;
+                text-align: center;
+                height: 300px;
+                background-repeat: no-repeat;
+            }
+            #temaki {
+                font-family: 'Noto Sans JP', sans-serif;
+                color:  #fff1df;
+                float:right;
+                width: 49%;
+                background-image: url(https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/D30D5F6C-520C-4E09-846F-BD1AFE062151/Derivates/fa4d2cd1-4e16-40af-8b83-c9363404d91f.jpg);
+                background-position: center center;
+                background-size: cover;
+                font-size: 27pt;
+                text-decoration: none;
+                text-align: center;
+                height: 300px;
+                background-repeat: no-repeat;
+            }
+            .rights {
+                font-family: 'Lato', sans-serif;
+                color:  #fff1df;
+                padding-right: 50px;
+                padding-left: 50px;
+                text-align: center;
+                font-size: larger;
+            }
+        </style>
+        </head>
+        <body>
+            <div id="header">
+                <div class="nav">
+                    <a style="font-family: 'Noto Sans JP', sans-serif; font-weight: bold; font-style: italic; font-size: xx-large;" href="index.html">SUSHI SPECTACLE</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="SlayfulSushi.html">SLAYFUL SUSHI</a>
+                    <a href="Sushitiquette.html">SUSHITIQUETTE</a>
+                    <a href="SushiStart.html">SUSHI START</a>
+                    <a href="AuthorsPage.html">AUTHOR'S PAGE</a>
+                    <a href="Sources.html">SOURCES</a>
+                </div>
+            </div>
+            <div id ="main">
+                <div class ="titles">
+                    <strong>SLAYFUL SUSHI</strong> : A Sushi Guide For Beginners 
+                <br>(click on the names to redirect you to another page !)
+                </div>
+            <br>
+            </div>
+            <div id="types1">
+                <div id="nigiri">
+                    <div class="sushititles"><a href="Nigiri.html" style="text-decoration: none;  -webkit-text-fill-color:#F2E6D8; -webkit-text-size-adjust: auto; -webkit-text-stroke-width:0.01px; -webkit-text-stroke-color: #21211D; font-family: 'Poppins', serif">NIGIRI</a></div>
+                </div>
+                    <div id="sashimi">
+                        <div class="sushititles"><a href="Sashimi.html" style="text-decoration: none;  -webkit-text-fill-color:#F2E6D8; -webkit-text-size-adjust: auto; -webkit-text-stroke-width:0.01px; -webkit-text-stroke-color: #21211D; font-family: 'POppins', serif">SASHIMI</a></div>
+                    </div>
+            </div>
+            <div id="types2">
+                <div id="chirashi">
+                    <div class="sushititles"><a href="Chirashi.html" style="text-decoration: none;  -webkit-text-fill-color:#F2E6D8; -webkit-text-size-adjust: auto; -webkit-text-stroke-width:0.01px; -webkit-text-stroke-color: #21211D; font-family: 'Poppins', serif">CHIRASHI</a></div>
+                </div>
+                <div id="maki">
+                    <div class="sushititles"><a href="Maki.html" style="text-decoration: none;  -webkit-text-fill-color:#F2E6D8; -webkit-text-size-adjust: auto; -webkit-text-stroke-width:0.01px; -webkit-text-stroke-color: #21211D; font-family: 'Poppins', serif">MAKI</a></div>
+                </div>
+            </div>
+            <div id="types3">
+                <div id="uramaki">
+                    <div class="sushititles"><a href="Uramaki.html" style="text-decoration: none;  -webkit-text-fill-color:#F2E6D8; -webkit-text-size-adjust: auto; -webkit-text-stroke-width:0.01px; -webkit-text-stroke-color: #21211D; font-family: 'Poppins', serif">URAMAKI</a></div>
+                </div>
+                <div id="temaki">
+                    <div class="sushititles"><a href="Temaki.html" style="text-decoration: none;  -webkit-text-fill-color:#F2E6D8; -webkit-text-size-adjust: auto; -webkit-text-stroke-width:0.01px; -webkit-text-stroke-color: #21211D; font-family: 'Poppins', serif;">TEMAKI</a></div>
+                </div>
+            </div>
+            <div id="footer"><div class="rights" style="padding: 63px;">Copyright &copy; 2022. Donut Dominik. All Rights Reserved.</div></div>
+        </body>
+</html>
+    
